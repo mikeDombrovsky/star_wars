@@ -1,0 +1,99 @@
+* {
+    font-family: 'StarJedi Special Edition', sans-serif;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+    caret-color: transparent;
+}
+
+main {
+    text-align: center;
+    color: rgba(255, 255, 0, 0.7);
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: -90%;
+    left: -100%;
+    z-index: -1;
+    background-image: url('./img/matt-gross.png');
+    background-size: cover;
+    background-position: center;
+    animation-name: space;
+    animation-duration: 500s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes space {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes elems {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    height: 40vh;
+}
+
+.info {
+    border: 1px solid rgba(255, 255, 0, 0.8);
+    border-radius: 10px;
+    display: inline-block;
+    width: 50%;
+    height: 40vh;
+    padding: 20px;
+    margin: 20px;
+}
+
+.spinner {
+    margin-top: 15vh;
+}
+
+button#find {
+    padding: 5px 15px;
+    background-color: transparent;
+    color: yellow;
+    border: 1px solid rgba(255, 255, 0, 0.8);
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+button#find:hover {
+    background-color: rgb(35, 35, 0);
+    cursor: pointer;
+}
+
+button#find:active {
+    background-color: rgb(66, 66, 0);
+}
+
+.none {
+    display: none;
+}
