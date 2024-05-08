@@ -20,11 +20,26 @@ main {
 main::before {
     content: "";
     position: absolute;
-    width: 300%;
-    height: 300%;
-    top: -90%;
-    left: -100%;
+    width: 300vh;
+    height: 300vw;
+    top: -100vh;
+    left: -30vw;
+    z-index: -2;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+}
+
+.rotating_space::before {
+    content: "";
+    position: absolute;
+    width: 300vh;
+    height: 300vh;
+    top: -90vh;
+    left: -30vw;
     z-index: -1;
+    border-radius: 50%;
     background-image: url('./img/matt-gross.png');
     background-size: cover;
     background-position: center;
@@ -59,7 +74,8 @@ main::before {
 }
 
 .logo img {
-    height: 40vh;
+    width: 60vw;
+    max-width: 900px;
 }
 
 .info {
@@ -67,6 +83,7 @@ main::before {
     border-radius: 10px;
     display: inline-block;
     width: 50%;
+    max-width: 900px;
     height: 40vh;
     padding: 20px;
     margin: 20px;
