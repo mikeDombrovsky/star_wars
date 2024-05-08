@@ -76,6 +76,7 @@ main::before {
 .logo img {
     width: 60vw;
     max-width: 900px;
+    opacity: 0.5;
 }
 
 .info {
