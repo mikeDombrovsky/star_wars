@@ -20,10 +20,10 @@ main {
 main::before {
     content: "";
     position: absolute;
-    width: 300vh;
-    height: 300vw;
+    width: 300vw;
+    height: 300vh;
     top: -100vh;
-    left: -30vw;
+    left: -100vw;
     z-index: -2;
     background-color: black;
     background-size: cover;
@@ -34,10 +34,10 @@ main::before {
 .rotating_space::before {
     content: "";
     position: absolute;
-    width: 300vh;
+    width: 300vw;
     height: 300vh;
-    top: -90vh;
-    left: -30vw;
+    top: -100vh;
+    left: -100vw;
     z-index: -1;
     border-radius: 50%;
     background-image: url('./img/matt-gross.png');
